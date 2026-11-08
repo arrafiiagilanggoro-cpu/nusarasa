@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kedai Nusa Rasa: masakan rumahan Nusantara. Pesan mudah lewat WhatsApp.">
+<title>Kedai Nusa Rasa – Masakan Rumahan Nusantara</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top">
+  <div class="top-isi">
+    <a class="logo" href="#beranda">Nusa<span class="merah">Rasa</span></a>
+    <nav class="menu-nav">
+      <a href="#menu">Menu</a><a href="#cara">Cara Pesan</a><a href="#tentang">Tentang</a><a href="#testimoni">Testimoni</a><a href="#lokasi">Lokasi</a><a href="#kontak">Kontak</a>
+    </nav>
+    <button class="btn-pesanan" id="bukaKeranjang" aria-label="Buka daftar pesanan">Pesanan <span class="badge" id="jumlah" aria-live="polite">0</span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="beranda">
+  <div class="hero-isi">
+    <div class="hero-teks">
+      <span class="label">Masakan rumahan Nusantara</span>
+      <h1>Rasa rumah, <span class="sorot">pedas hangat</span> di setiap suapan</h1>
+      <p>Kedai Nusa Rasa memasak setiap hari dari bumbu yang diracik sendiri. Pilih menu favoritmu, lalu pesan langsung lewat WhatsApp untuk diantar atau diambil.</p>
+      <div class="hero-aksi">
+        <a class="btn" href="#menu">Lihat menu</a>
+        <a class="btn btn-garis" href="#cara">Cara pesan</a>
+      </div>
+      <div class="hero-info">
+        <div><strong>09.00 – 21.00</strong><span>Buka setiap hari</span></div>
+        <div><strong>Antar &amp; ambil</strong><span>Pesan lewat WhatsApp</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="piring"><div class="piring-isi"><span>Nasi</span><span class="kuning">Ayam Bakar</span><span>Sambal</span></div></div>
+      <div class="stiker s1">Level pedas 1–5</div>
+      <div class="stiker s2">Dimasak segar</div>
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="bagian">
+  <div class="grid-3">
+    <div class="fitur"><span class="nomor">01</span><h3>Bumbu racik sendiri</h3><p>Bumbu dasar dibuat setiap pagi supaya rasanya konsisten dan tidak hambar.</p></div>
+    <div class="fitur"><span class="nomor">02</span><h3>Harga bersahabat</h3><p>Porsi pas untuk makan siang tanpa membuat dompet menjerit.</p></div>
+    <div class="fitur"><span class="nomor">03</span><h3>Pesan tanpa ribet</h3><p>Pilih menu, kirim lewat WhatsApp, lalu tunggu pesananmu datang.</p></div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="bagian" id="menu">
+  <div class="judul"><h2>Menu <span class="merah">andalan</span></h2><p>Klik Tambah untuk memasukkan ke daftar pesanan.</p></div>
+  <div class="filter" id="filter">
+    <button class="chip aktif" data-kat="semua">Semua</button>
+    <button class="chip" data-kat="makanan">Makanan</button>
+    <button class="chip" data-kat="minuman">Minuman</button>
+    <button class="chip" data-kat="camilan">Camilan</button>
+  </div>
+  <div class="grid-menu" id="daftarMenu"></div>
+</section>
+
+<!-- CARA PESAN -->
+<section class="bagian gelap" id="cara">
+  <div class="judul"><h2>Cara <span class="kuning">pesan</span></h2><p>Empat langkah, selesai dalam hitungan menit.</p></div>
+  <div class="grid-4">
+    <div class="langkah"><span class="nomor">1</span><h3>Pilih menu</h3><p>Telusuri menu dan tekan Tambah.</p></div>
+    <div class="langkah"><span class="nomor">2</span><h3>Cek pesanan</h3><p>Buka Pesanan, atur jumlah, dan tulis catatan.</p></div>
+    <div class="langkah"><span class="nomor">3</span><h3>Kirim WhatsApp</h3><p>Tekan tombol kirim, pesan tersusun otomatis.</p></div>
+    <div class="langkah"><span class="nomor">4</span><h3>Terima pesanan</h3><p>Pesananmu kami siapkan lalu diantar atau diambil.</p></div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section class="bagian" id="tentang">
+  <div class="dua-kolom">
+    <div>
+      <div class="judul"><h2>Tentang <span class="merah">kami</span></h2></div>
+      <p>Nusa Rasa berawal dari dapur rumah dengan satu tujuan: menyajikan masakan Nusantara yang hangat dan terjangkau. Kami memakai bahan segar, memasak dalam jumlah yang pas setiap hari, dan menjaga kebersihan dapur.</p>
+      <p>Sebagai usaha mikro kecil, kami percaya pelanggan adalah tetangga. Karena itu setiap pesanan disiapkan seperti untuk keluarga sendiri.</p>
+    </div>
+    <div class="kotak-nilai">
+      <div class="nilai"><strong>Segar</strong><span>Bahan dibeli setiap hari</span></div>
+      <div class="nilai"><strong>Bersih</strong><span>Dapur dijaga higienis</span></div>
+      <div class="nilai"><strong>Ramah</strong><span>Dilayani langsung pemilik</span></div>
+      <div class="nilai"><strong>Lokal</strong><span>Rasa khas Nusantara</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="bagian" id="testimoni">
+  <div class="judul"><h2>Kata <span class="merah">pelanggan</span></h2></div>
+  <div class="grid-3">
+    <div class="testi"><p>“Ayam bakarnya meresap sampai ke dalam, sambalnya bikin nambah nasi.”</p><span class="nama">Rina, mahasiswa</span></div>
+    <div class="testi"><p>“Pesan lewat WhatsApp gampang, datangnya cepat dan masih hangat.”</p><span class="nama">Budi, karyawan</span></div>
+    <div class="testi"><p>“Es kopi gula arennya pas manisnya, tidak berlebihan.”</p><span class="nama">Sari, ibu rumah tangga</span></div>
+  </div>
+</section>
+
+<!-- LOKASI -->
+<section class="bagian" id="lokasi">
+  <div class="dua-kolom">
+    <div class="kotak">
+      <h3>Alamat</h3>
+      <p>Perumahan Grand Depok City Kota Depok</p>
+      <h3>Jam buka</h3>
+      <div class="jam"><span>Senin – Jumat</span><span>09.00 – 21.00</span></div>
+      <div class="jam"><span>Sabtu – Minggu</span><span>08.00 – 22.00</span></div>
+    </div>
+    <div class="kotak">
+      <h3>Layanan</h3>
+      <p>Makan di tempat, ambil sendiri, dan antar untuk area sekitar. Ongkos antar menyesuaikan jarak dan disepakati lewat WhatsApp.</p>
+      <a class="btn" href="https://maps.app.goo.gl/w2TTskC5gMLWEXbN9" target="_blank" rel="noopener">Buka di Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="bagian" id="kontak">
+  <div class="dua-kolom">
+    <div>
+      <div class="judul"><h2>Hubungi <span class="merah">kami</span></h2><p>Mau pesan dalam jumlah besar atau ada pertanyaan? Kirim pesan, kami balas lewat WhatsApp.</p></div>
+      <p>WhatsApp: <span class="tebal" id="tampilNomor"></span><br>Instagram: <span class="tebal">@nusarasa.kedai</span></p>
+    </div>
+    <form class="form" id="formKontak">
+      <label>Nama<input name="nama" required></label>
+      <label>Pesan<textarea name="pesan" rows="4" required></textarea></label>
+      <button class="btn">Kirim lewat WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-isi">
+    <div><div class="logo">Nusa<span class="kuning">Rasa</span></div><p>Masakan rumahan Nusantara, dimasak segar setiap hari.</p></div>
+    <div><h3>Menu</h3><div><a href="#menu">Daftar menu</a></div><div><a href="#cara">Cara pesan</a></div><div><a href="#tentang">Tentang kami</a></div></div>
+    <div><h3>Jam buka</h3><p>Setiap hari<br>09.00 – 21.00</p></div>
+  </div>
+  <div class="footer-bawah">&copy; <span id="tahun">2026</span> Kedai Nusa Rasa - Cita Rasa Khas Nusantara.</div>
+</footer>
+
+<!-- KERANJANG -->
+<div class="tirai" id="tirai"></div>
+<aside class="keranjang" id="keranjang" aria-label="Daftar pesanan" aria-hidden="true">
+  <div class="k-kepala"><h2>Pesananmu</h2><button class="tutup" id="tutupKeranjang" aria-label="Tutup">Tutup</button></div>
+  <div class="k-isi" id="isiKeranjang"></div>
+  <div class="k-kaki">
+    <div class="total"><span>Total</span><strong id="total">Rp 0</strong></div>
+    <label>Nama pemesan<input id="namaPemesan" placeholder="Nama kamu"></label>
+    <label>Alamat / catatan<textarea id="catatan" rows="2" placeholder="Alamat antar, level pedas, dll."></textarea></label>
+    <button class="btn" id="kirimWA">Pesan lewat WhatsApp</button>
+  </div>
+</aside>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
